@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.photoediting.PhotoEditingFragment">
+
+    <com.yans.painting.view.PaintView
+        android:id="@+id/pnt_editable"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:brush_width="@dimen/dp_3"
+        app:brush_default_color="#C71585"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_brush_color_outline"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#C71585"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_brush_color"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/circle"
+        android:elevation="4dp"
+        android:src="@drawable/ic_baseline_brush_24"
+        app:layout_constraintBottom_toBottomOf="@+id/img_brush_color_outline"
+        app:layout_constraintEnd_toEndOf="@+id/img_brush_color_outline"
+        app:layout_constraintStart_toStartOf="@+id/img_brush_color_outline"
+        app:layout_constraintTop_toTopOf="@+id/img_brush_color_outline" />
+
+    <ImageButton
+        android:id="@+id/img_brush_thickness_outline"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_brush_color_outline" />
+
+    <ImageButton
+        android:id="@+id/btn_brush_thickness"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/circle"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_brush_thickness_outline"
+        app:layout_constraintEnd_toEndOf="@+id/img_brush_thickness_outline"
+        app:layout_constraintStart_toStartOf="@+id/img_brush_thickness_outline"
+        app:layout_constraintTop_toTopOf="@+id/img_brush_thickness_outline" />
+
+    <ImageView
+        android:id="@+id/img_brush_thickness"
+        android:layout_width="3dp"
+        android:layout_height="3dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/grey"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_brush_thickness_outline"
+        app:layout_constraintEnd_toEndOf="@+id/img_brush_thickness_outline"
+        app:layout_constraintStart_toStartOf="@+id/img_brush_thickness_outline"
+        app:layout_constraintTop_toTopOf="@+id/img_brush_thickness_outline" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/save"
+        android:background="@drawable/rounded_bg"
+        android:elevation="10dp"
+        android:textSize="12sp"
+        android:backgroundTint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="@+id/img_brush_thickness_outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_brush_thickness_outline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

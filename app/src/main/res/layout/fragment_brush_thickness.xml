@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.thicknesspicker.BrushThicknessFragment">
+
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@color/translucent"
+        android:src="@drawable/ic_baseline_close_24"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/img_gap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_gap"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/thickness"
+        android:textAppearance="@style/h2_text"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/img_gap"
+        app:layout_constraintStart_toEndOf="@+id/btn_close"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_thickness_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ring"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_thickness_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_gap"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="3dp"
+        android:background="@color/translucent"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_thickness_1"
+        app:layout_constraintEnd_toEndOf="@+id/btn_thickness_1"
+        app:layout_constraintStart_toStartOf="@+id/btn_thickness_1"
+        app:layout_constraintTop_toTopOf="@+id/btn_thickness_1"
+        app:tint="@color/grey" />
+
+    <ImageButton
+        android:id="@+id/btn_thickness_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ring"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_thickness_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_thickness_1"
+        app:layout_constraintTop_toBottomOf="@+id/img_gap"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:background="@color/translucent"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_thickness_2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_thickness_2"
+        app:layout_constraintStart_toStartOf="@+id/btn_thickness_2"
+        app:layout_constraintTop_toTopOf="@+id/btn_thickness_2"
+        app:tint="@color/grey" />
+
+    <ImageButton
+        android:id="@+id/btn_thickness_3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ring"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_thickness_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_thickness_2"
+        app:layout_constraintTop_toBottomOf="@+id/img_gap"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:background="@color/translucent"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_thickness_3"
+        app:layout_constraintEnd_toEndOf="@+id/btn_thickness_3"
+        app:layout_constraintStart_toStartOf="@+id/btn_thickness_3"
+        app:layout_constraintTop_toTopOf="@+id/btn_thickness_3"
+        app:tint="@color/grey" />
+
+    <ImageButton
+        android:id="@+id/btn_thickness_4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ring"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_thickness_5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_thickness_3"
+        app:layout_constraintTop_toBottomOf="@+id/img_gap"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@color/translucent"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_thickness_4"
+        app:layout_constraintEnd_toEndOf="@+id/btn_thickness_4"
+        app:layout_constraintStart_toStartOf="@+id/btn_thickness_4"
+        app:layout_constraintTop_toTopOf="@+id/btn_thickness_4"
+        app:tint="@color/grey" />
+
+    <ImageButton
+        android:id="@+id/btn_thickness_5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ring"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_thickness_6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_thickness_4"
+        app:layout_constraintTop_toBottomOf="@+id/img_gap"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@color/translucent"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_thickness_5"
+        app:layout_constraintEnd_toEndOf="@+id/btn_thickness_5"
+        app:layout_constraintStart_toStartOf="@+id/btn_thickness_5"
+        app:layout_constraintTop_toTopOf="@+id/btn_thickness_5"
+        app:tint="@color/grey" />
+
+    <ImageButton
+        android:id="@+id/btn_thickness_6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ring"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_thickness_5"
+        app:layout_constraintTop_toBottomOf="@+id/img_gap"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@color/translucent"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_thickness_6"
+        app:layout_constraintEnd_toEndOf="@+id/btn_thickness_6"
+        app:layout_constraintStart_toStartOf="@+id/btn_thickness_6"
+        app:layout_constraintTop_toTopOf="@+id/btn_thickness_6"
+        app:tint="@color/grey" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Painting</string>
+    <string name="pick_color">Выберете цвет</string>
+    <string name="thickness">Толщина</string>
+    <string name="save">Сохранить</string>
+    <string name="saves_success">Фото успешно сохранено</string>
+</resources>
